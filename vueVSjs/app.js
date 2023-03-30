@@ -1,5 +1,15 @@
 Vue.createApp({
-	data: function () { },
+	data() {
+		return {
+			goals: [],
+			enteredValue: "",
+		};
+	},
+	methods: {
+		addGoal() {
+			this.goals.push(this.enteredValue);
+		},
+	},
 });
 
 // const buttonEl = document.querySelector("button");
